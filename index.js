@@ -27,7 +27,9 @@ server.get('/hobbits', (req, res) => {
             id: 2,
             name: 'Frodo Baggins'
         }
-    ]
+    ];
+
+    res.status(200).json(hobbits);
 })
 
 
@@ -38,3 +40,14 @@ server.get('/hobbits', (req, res) => {
 server.listen(8000, () => {
     console.log('API running on port 8000')
 })
+
+/* 
+
+***WHAT HAVE WE LEARNED?***
+-How to use express to create a web API
+-What Endpoints are and how to create  them.
+-How to respond to GET Requests.
+-How to return JSON Data
+-How to return the correct HTTP Status Codes.
+
+*/
