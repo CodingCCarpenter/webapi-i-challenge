@@ -14,8 +14,21 @@ server.get('/', (req, res) => {
     //response objects to this function. 
     //The .send() on the res obj can be used to 
     //send a res to the client
-    res.send('Hello World');
+    res.send('Hello World!');
 });
+
+server.get('/hobbits', (req, res) => {
+    const hobbits = [
+        {
+            id: 1,
+            name: 'Samwise Gamgee'
+        },
+        {
+            id: 2,
+            name: 'Frodo Baggins'
+        }
+    ]
+})
 
 
 //once the server is all set up, we can have it 
