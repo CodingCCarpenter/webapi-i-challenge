@@ -30,7 +30,29 @@ server.get('/hobbits', (req, res) => {
     ];
 
     res.status(200).json(hobbits);
-})
+});
+
+/*CHALLENGE
+Write an endpoint that returns a list of users 
+stored in a database. Return data in JSON format */
+server.get('/users', (req, res) => {
+    const users = [
+        {
+            id: 1,
+            name: 'Chad',
+            username: 'CHARpen',
+            age: 34
+        },
+        {
+            id: 2,
+            name: 'Christy',
+            username: 'CodingCCarpen',
+            age: 34
+        }
+    ];
+
+    res.status(200).json(users);
+});
 
 
 //once the server is all set up, we can have it 
